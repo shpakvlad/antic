@@ -1,0 +1,9 @@
+:root {
+  --bg-color: #f3eee8;
+  --terracotta: #a06056;
+  --brown: #706458;
+  --brown-light: rgba(112, 100, 88, 0.9); /* #706458 - 90%*/
+  --brown-super-light: rgba(112, 100, 88, 0.7); /* #706458 - 70%*/
+  --brown-dark: #534B42;
+  --bg-primary: #121212;
+}

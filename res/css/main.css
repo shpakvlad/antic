@@ -1,0 +1,448 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+  padding: 0 2%;
+}
+
+/*
+.##.....##.########....###....########..########.########.
+.##.....##.##.........##.##...##.....##.##.......##.....##
+.##.....##.##........##...##..##.....##.##.......##.....##
+.#########.######...##.....##.##.....##.######...########.
+.##.....##.##.......#########.##.....##.##.......##...##..
+.##.....##.##.......##.....##.##.....##.##.......##....##.
+.##.....##.########.##.....##.########..########.##.....##
+*/
+header {
+  width: 100%;
+  top: 55px;
+  position: absolute;
+  background-color: transparent;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+.header-logo-menu {
+  display: flex;
+}
+
+.header-logo-menu p,
+.footer-logo {
+  margin-right: 34px;
+  font: 2.142rem "Merriweather-bold";
+  text-transform: lowercase;
+  letter-spacing: 2px;
+  color: var(--terracotta);
+}
+
+.header-logo-menu nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.header-logo-menu nav a {
+  padding: 10px;
+  font: 1.134rem "Varta-regular;";
+  color: var(--brown);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  
+  &:hover {
+    background-color: var(--brown-dark);
+    color: var(--bg-color);
+  }
+}
+/*
+.##.....##.########.########...#######.
+.##.....##.##.......##.....##.##.....##
+.##.....##.##.......##.....##.##.....##
+.#########.######...########..##.....##
+.##.....##.##.......##...##...##.....##
+.##.....##.##.......##....##..##.....##
+.##.....##.########.##.....##..#######.
+*/
+.section-hero {
+  background-color: var(--bg-color);
+  background-image: url("../img/bg/hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 50% 100vh;
+
+  background-attachment: fixed;
+  object-fit: cover;
+}
+
+.hero {
+  padding: 215px 0 315px 0;
+}
+
+.hero-text {
+  margin: auto auto auto 0;
+}
+
+.hero-text h1 {
+  font: 0.882rem "Varta-bold";
+  color: var(--terracotta);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.hero-text h2 {
+  margin-top: 50px;
+  font: 3.15rem/70px "Merriweather-light";
+  letter-spacing: -0.4px;
+  color: var(--terracotta);
+}
+
+.hero-text p {
+  margin-top: 30px;
+  font: 1.386rem/30.8px "Varta-light";
+  color: var(--brown-light);
+}
+.hero-text a svg {
+  margin-top: 48px;
+}
+
+/*
+.....########...#######...#######..##.....##..######.
+.....##.....##.##.....##.##.....##.###...###.##....##
+.....##.....##.##.....##.##.....##.####.####.##......
+.....########..##.....##.##.....##.##.###.##..######.
+.....##...##...##.....##.##.....##.##.....##.......##
+.###.##....##..##.....##.##.....##.##.....##.##....##
+.###.##.....##..#######...#######..##.....##..######.
+*/
+.section-rooms {
+  padding: 65px 0;
+  background-color: var(--bg-color);
+}
+
+.section-rooms h3 {
+  font: 3.465rem/60px "Merriweather-light";
+  color: var(--brown);
+  text-align: left;
+}
+
+.rooms-promo {
+  margin-top: 48px;
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.rooms-promo p {
+  width: 350px;
+  font: 1.134rem/25px "Varta-regular";
+  color: var(--brown-light);
+}
+
+.rooms-card {
+  margin-left: 24px;
+  margin-right: 120px;
+  display: flex;
+  position: relative;
+  display: flex;
+}
+
+.rooms-card:last-of-type {
+  margin-right: 0;
+}
+
+.rooms-card img {
+  width: 60%;
+  margin-right: 32px;
+}
+
+.rooms-card h3 {
+  font: 3.465rem/60px "Merriweather-regular";
+  letter-spacing: -0.6px;
+  color: var(--brown-dark);
+  z-index: 1000;
+  position: absolute;
+  top: 40%;
+  right: 20px;
+  text-align: right;
+}
+
+.rooms-card a {
+  font: 1.134rem/25px "Varta-regular";
+  color: var(--brown);
+  text-decoration: none;
+}
+
+/*
+.##....##.########.##......##..######.
+.###...##.##.......##..##..##.##....##
+.####..##.##.......##..##..##.##......
+.##.##.##.######...##..##..##..######.
+.##..####.##.......##..##..##.......##
+.##...###.##.......##..##..##.##....##
+.##....##.########..###..###...######.
+*/
+.section-news {
+  background-color: var(--bg-color);
+}
+
+.section-news .container {
+  padding-bottom: 60px;
+  display: flex;
+  gap: 20px;
+}
+
+.news-header {
+  width: 100%;
+}
+
+.news-header h3 {
+  margin-bottom: 30px;
+  width: 100%;
+  font: 3.465rem/60px "Merriweather-light";
+  letter-spacing: -0.6px;
+  color: var(--brown);
+  flex-wrap: wrap;
+}
+
+.news-header-link {
+  display: flex;
+}
+
+.news-header-link a {
+  font: 1.071rem/25px "Karla-bold";
+  letter-spacing: 0.3px;
+  color: var(--terracotta);
+  text-decoration: none;
+}
+
+.news-block {
+  display: grid;
+  grid-template-areas:
+    "A C"
+    "B D";
+  grid-template-columns: 260px 260px;
+  grid-template-rows: 170px 170px;
+  gap: 30px;
+  justify-items: center;
+  align-content: start;
+}
+
+.news-1 {
+  grid-area: A;
+}
+
+.news-2 {
+  grid-area: B;
+}
+
+.news-3 {
+  grid-area: C;
+}
+
+.news-4 {
+  grid-area: D;
+}
+
+.news h3 {
+  font: 1.575rem/30px "Varta-bold";
+  letter-spacing: -0.02px;
+  color: var(--terracotta);
+}
+
+.news p {
+  margin-top: 12px;
+  font: 1.134rem/25px "Varta-regular";
+  color: var(--brown-light);
+}
+
+/*
+.####.##....##..######..########..####.########.....###....########.####..#######..##....##..######.
+..##..###...##.##....##.##.....##..##..##.....##...##.##......##.....##..##.....##.###...##.##....##
+..##..####..##.##.......##.....##..##..##.....##..##...##.....##.....##..##.....##.####..##.##......
+..##..##.##.##..######..########...##..########..##.....##....##.....##..##.....##.##.##.##..######.
+..##..##..####.......##.##.........##..##...##...#########....##.....##..##.....##.##..####.......##
+..##..##...###.##....##.##.........##..##....##..##.....##....##.....##..##.....##.##...###.##....##
+.####.##....##..######..##........####.##.....##.##.....##....##....####..#######..##....##..######.
+*/
+.section-inspirations {
+  padding-top: 70px;
+}
+.spam-mail {
+  margin-bottom: 70px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.spam-header {
+  width: 100%;
+}
+
+.spam-header h2 {
+  font: 2.205rem/40px "Merriweather-light";
+  letter-spacing: 0.3px;
+  color: var(--bg-primary);
+}
+
+.spam-header p {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font: 1.134rem/25px "Varta-regular";
+}
+
+form {
+  width: 100%;
+  text-align: right;
+}
+
+input[type="email"] {
+  width: 300px;
+  height: 50px;
+  font: 1.134rem/25px "Varta-regular";
+}
+
+input[type="email"]::placeholder {
+  padding-left: 20px;
+}
+
+form button {
+  padding: 13px 30px;
+  font-style: 1.071rem;
+  line-height: 25px;
+  color: var(--bg-color);
+  letter-spacing: 0.3px;
+  background-color: var(--brown-dark);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: var(--brown);
+  }
+}
+
+/*
+.########..#######...#######..########.########.########.
+.##.......##.....##.##.....##....##....##.......##.....##
+.##.......##.....##.##.....##....##....##.......##.....##
+.######...##.....##.##.....##....##....######...########.
+.##.......##.....##.##.....##....##....##.......##...##..
+.##.......##.....##.##.....##....##....##.......##....##.
+.##........#######...#######.....##....########.##.....##
+*/
+footer {
+  padding: 70px 0;
+  background-color: var(--bg-color);
+}
+
+.footer-logo-menu {
+  display: flex;
+  /* flex-flow: column;
+  align-items: center; */
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer-logo {
+  margin-top: -12px;
+}
+
+.footer-menu {
+  display: flex;
+  gap: 48px;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  gap: 8px;
+}
+
+.menu h4 {
+  font: 1.575rem/30px "Varta-bold";
+  color: var(--brown-dark);
+}
+
+.menu a {
+  font: 1.134rem/25px "Varta-regular";
+  color: var(--brown-dark);
+  text-decoration: none;
+}
+
+.menu nav {
+  margin-top: 18px;
+  display: flex;
+  flex-flow: column;
+}
+
+.menu nav a {
+  width: auto;
+  padding-top: 12px;
+}
+
+.footer-respect {
+  display: flex;
+  flex-flow: column;
+  max-width: 235px;
+}
+
+.footer-respect h4 {
+  font: 1.575rem/30px "Varta-bold";
+  color: var(--brown-dark);
+}
+.footer-respect > img {
+  margin-top: 24px;
+  width: 100%;
+}
+
+.footer-respect p {
+  margin: 15px 0;
+  font: 1.134rem/25px "Varta-regular";
+  color: var(--brown-dark);
+}
+
+.footer-social {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.footer-rights .container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-rights p,
+.footer-rights nav a {
+  font: 1.134rem/25px "Varta-regular";
+  color: var(--brown-dark);
+  text-decoration: none;
+}
+
+.footer-rights nav {
+  display: flex;
+  gap: 30px;
+}
+
+/*
+.########.##....##.########.....
+.##.......###...##.##.....##....
+.##.......####..##.##.....##....
+.######...##.##.##.##.....##....
+.##.......##..####.##.....##....
+.##.......##...###.##.....##.###
+.########.##....##.########..###
+*/

@@ -1,0 +1,323 @@
+/*
+....##.....#####....#######....#####..
+..####....##...##..##.....##..##...##.
+....##...##.....##.##.....##.##.....##
+....##...##.....##..#######..##.....##
+....##...##.....##.##.....##.##.....##
+....##....##...##..##.....##..##...##.
+..######...#####....#######....#####..
+*/
+@media (max-width: 1080px) {
+
+  .section-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
+      url("../img/bg/hero-bg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    object-fit: fill;
+  }
+
+  .hero-text h1,
+  .hero-text h2,
+  .hero-text p {
+    color: var(--bg-color);
+  }
+  .hero-text a svg {
+    margin-top: 30px;
+  }
+
+  .hero-text a svg path {
+    stroke: var(--bg-color);
+  }
+  .hero-text a svg rect {
+    stroke: var(--bg-color);
+  }
+}
+
+
+/*
+....##.....#####....#######...#######.
+..####....##...##..##.....##.##.....##
+....##...##.....##........##........##
+....##...##.....##..#######...#######.
+....##...##.....##.##...............##
+....##....##...##..##........##.....##
+..######...#####...#########..#######.
+*/
+@media (max-width: 1023px) {
+  * {
+    font-size: 95%;
+  }
+
+  header {
+    padding: 10px 0;
+    background-color: var(--terracotta);
+  }
+
+  .header-logo-menu p {
+    color: var(--bg-color);
+  }
+
+  .header-logo-menu nav a {
+    color: var(--bg-color);
+  }
+
+  .news-block {
+    grid-template-columns: 180px 180px;
+    grid-template-rows: 230px 230px;
+  }
+}
+
+/*
+..#######..########...#####..
+.##.....##.##....##..##...##.
+.##.....##.....##...##.....##
+..########....##....##.....##
+........##...##.....##.....##
+.##.....##...##......##...##.
+..#######....##.......#####..
+*/
+
+@media (max-width: 970px) {
+  .footer-respect {
+    margin-top: 30px;
+  }
+}
+
+/*
+..#######..##..........#####..
+.##.....##.##....##...##...##.
+.##.....##.##....##..##.....##
+..########.##....##..##.....##
+........##.#########.##.....##
+.##.....##.......##...##...##.
+..#######........##....#####..
+*/
+
+@media (max-width: 940px) {
+  .section-inspirations {
+    display: flex;
+  }
+  .spam-mail {
+    flex-flow: column;
+    justify-items: center;
+  }
+  form {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  input[type="email"] {
+    margin-top: 20px;
+    width: 360px;
+  }
+}
+
+/*
+.########..#######...#######.
+.##....##.##.....##.##.....##
+.....##...##........##.....##
+....##....########...#######.
+...##.....##.....##.##.....##
+...##.....##.....##.##.....##
+...##......#######...#######.
+*/
+@media (max-width: 768px) {
+  /* .section-hero {
+    /* background-size: cover; 
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
+      url("../img/bg/hero-bg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    object-fit: fill;
+  }
+
+  .hero-text h1,
+  .hero-text h2,
+  .hero-text p {
+    color: var(--bg-color);
+  }
+  .hero-text a svg {
+    margin-top: 30px;
+  }
+
+  .hero-text a svg path {
+    stroke: var(--bg-color);
+  }
+  .hero-text a svg rect {
+    stroke: var(--bg-color);
+  } */
+
+  .rooms-promo {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  .rooms-card {
+    margin-top: 30px;
+    margin-right: 0;
+  }
+
+  .rooms-card h3 {
+    left: 50px;
+  }
+
+  .rooms-card img {
+    width: 40%;
+  }
+
+  .section-news .container {
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .news-block {
+    margin-top: 30px;
+    grid-template-columns: 230px 230px;
+    grid-template-rows: 200px 200px;
+  }
+}
+
+/*
+..#######....#####.....#####..
+.##.....##..##...##...##...##.
+.##........##.....##.##.....##
+.########..##.....##.##.....##
+.##.....##.##.....##.##.....##
+.##.....##..##...##...##...##.
+..#######....#####.....#####..
+*/
+@media (max-width: 600px) {
+  .footer-menu {
+    margin-top: 30px;
+  }
+
+  .spam-header p {
+    max-width: 90%;
+
+  }
+}
+
+/*
+.##.........#######....#####..
+.##....##..##.....##..##...##.
+.##....##..##.....##.##.....##
+.##....##...#######..##.....##
+.#########.##.....##.##.....##
+.......##..##.....##..##...##.
+.......##...#######....#####..
+*/
+@media (max-width: 480px) {
+  header .container {
+    flex-flow: column;
+  }
+
+  .header-logo-menu {
+    flex-flow: column;
+  }
+
+  .header-logo-menu nav {
+    margin-top: 30px;
+    gap: 40px;
+  }
+
+  header .container > a {
+    margin-top: 40px;
+  }
+
+  .news-block {
+    grid-template-areas:
+    "A" 
+    "B"
+    "C"
+    "D";
+    grid-template-columns: 350px;
+    grid-template-rows: auto;
+  }
+
+  form button {
+    margin-top: 30px;
+  }
+
+  .footer-menu {
+    display: none;
+  }
+
+  .menu {
+    max-width: 250px;
+  }
+
+  .footer-logo-menu {
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .footer-respect {
+    margin-top: 40px;
+  }
+
+  .footer-rights .container {
+    flex-flow: column;
+    text-align: center;
+  }
+
+  .footer-rights nav {
+    margin-top: 30px;
+    justify-content: center;
+  }
+}
+
+/*
+..#######...#######....#####..
+.##.....##.##.....##..##...##.
+........##........##.##.....##
+..#######...#######..##.....##
+........##.##........##.....##
+.##.....##.##.........##...##.
+..#######..#########...#####..
+*/
+@media (max-width: 320px) {
+  /* * {
+    font-size: 80%;
+  } */
+  .header-logo-menu nav {
+    display: none;
+  }
+
+  .hero-text {
+    margin-top: 30px;
+  }
+
+  .rooms-card h3 {
+    font-size: 30px;
+
+  }
+
+  .news-block {
+    /* max-width: 546px; */
+
+    display: grid;
+    grid-template-areas:
+      "A"
+      "B"
+      "C"
+      "D";
+    grid-template-columns: 200px;
+    grid-template-rows: auto;
+    gap: 30px;
+    justify-items: center;
+    align-content: start;
+  }
+
+  .news {
+    margin-top: 20px;
+  }
+
+  .spam-mail p {
+    width: 100%;
+  }
+  input[type="email"] {
+    width: 260px;
+  }
+}
